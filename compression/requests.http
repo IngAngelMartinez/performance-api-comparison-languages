@@ -1,0 +1,30 @@
+###  
+GET http://localhost:3000/api/compression
+
+###  
+GET http://localhost:3000/api/compression/63c22b17d1ac554e0170e4d2
+
+###  
+POST  http://localhost:3000/api/compression
+content-type: application/json
+
+{
+    "name": "Angel",
+    "data": {
+        "field01": "value",
+        "field02": 2,
+        "what ever": "yeah!",
+        "complex object": {
+            "description": "Description of complex object",
+            "items": [
+                "dog",
+                "cat",
+                10,
+                true
+            ],
+            "price": 28.47
+        }
+    },
+    "number": 1,
+    "date": "2022-11-19T12:00:00.300Z"
+}
